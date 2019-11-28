@@ -1,0 +1,122 @@
+.next-event {
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  padding: 3rem;
+  border-radius: 4rem;
+  .event-info {
+    text-align: center;
+    .date {
+      font-weight: 200;
+      font-size: 3rem;
+    }
+    .location {
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+  }
+  .sessions {
+    display: flex;
+    flex-flow: column;
+    .session-container {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 0.5rem;
+      border-radius: 2rem;
+      display: flex;
+      flex-flow: row;
+      margin: 0.5rem;
+      .picture > img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      .info {
+        padding: 0 1rem;
+        .speaker {
+          font-size: 2rem;
+          font-weight: 200;
+        }
+        .time-slot {
+          padding-top: 0.5rem;
+          color: rgba(255, 255, 255, 0.75);
+        }
+      }
+    }
+  }
+  .registration {
+    margin-top: 1rem;
+    text-align: center;
+    a > span {
+      display: inline-block;
+      padding: 1rem 3rem;
+      background: $accent;
+      border-radius: 1rem;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .next-event {
+    background: rgba(0, 0, 0, 0.25);
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 4rem;
+    .event-info {
+      text-align: center;
+      .date {
+        font-weight: 200;
+        font-size: 4rem;
+      }
+      .location {
+        font-weight: 200;
+        font-size: 2rem;
+      }
+    }
+    .sessions {
+      display: flex;
+      flex-flow: row;
+      .session-container {
+        background: rgba(0, 0, 0, 0.25);
+        padding: 1rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-flow: row;
+        margin: 0.5rem;
+        .picture > img {
+          width: 128px;
+          height: 128px;
+          border-radius: 50%;
+        }
+        .info {
+          padding: 0 1rem;
+          .speaker {
+            font-size: 2rem;
+            font-weight: 200;
+          }
+          .time-slot {
+            padding-top: 0.5rem;
+            color: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+    }
+    .registration {
+      margin-top: 1rem;
+      text-align: center;
+      a > span {
+        display: inline-block;
+        padding: 1rem 3rem;
+        background: $accent;
+        border-radius: 1rem;
+        color: white;
+      }
+    }
+  }
+}
